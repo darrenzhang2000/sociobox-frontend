@@ -1,0 +1,72 @@
+/* .ck-btn {
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+}
+
+.ck-btn label {
+    float:left;
+    width:4.0em;
+}
+
+.ck-btn label span {
+    text-align:center;
+    padding:3px 0px;
+    display:block;
+}
+
+.ck-btn label input{
+    position:absolute;
+    top:-20px;
+}
+
+.ck-btn input:checked + span {
+    background-color:#911;
+    color:#fff;
+}
+ */
+
+
+ label {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid gray;
+  }
+ input:focus:checked + label {
+    background-color: green;
+  }
+
+  input:checked + label{
+    background-color: green;
+}
+
+ .to-select{
+    margin-top: 50px;
+    text-align: center;
+ }
+
+ .to-select .confirm{
+    margin-top: 25px;
+ }
+
+ .ck {
+     min-width: 200px;
+     width: 50%;
+     max-width: 479px;
+     height: 144px;;
+     background-color: white;
+     border: none;
+     border-radius: 24px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     margin-bottom: 10px;
+    }
+
+    #updates-freq {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        max-width: 640px;
+    }
