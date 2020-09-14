@@ -14,9 +14,16 @@ code {
 }
 
 
+.navbar-top{
+  color: black !important;
+}
 
+.navbar-top btn {
+  font-size: 24px !important;
+  line-height: 29px !important;
+}
 
-.navbar-fixed{
+.navbar-bottom{
   position: fixed !important;
   bottom: 0;
 }
@@ -30,3 +37,35 @@ nav ul {
   display: flex;
   justify-content: space-evenly;
 }
+
+nav img{
+  padding-top: 5px;
+  width: 55px;
+}
+
+.btn-base{
+  background-color: #2160AA !important;
+  min-width: 150px;
+ }
+
+ .btn-small-radius{
+  border-radius: 8px !important;
+ }
+
+ .btn-radius{
+  border-radius: 25px !important;
+ }
+
+ .btn-base:hover{
+  -webkit-box-shadow: 0px 20px 22px -5px rgba(0,0,0,0.71);
+  -moz-box-shadow: 0px 20px 22px -5px rgba(0,0,0,0.71);
+  box-shadow: 0px 20px 22px -5px rgba(0,0,0,0.71);
+ }
+
+ .btn-base:active{
+  -webkit-box-shadow: inset 0px 0px 30px 6px rgba(0,0,0,0.71);
+  -moz-box-shadow: inset 0px 0px 30px 6px rgba(0,0,0,0.71);
+  box-shadow: inset 0px 0px 30px 6px rgba(0,0,0,0.71) !important;
+  color: #90AFD4;
+  transition: 0.1s;
+ }
