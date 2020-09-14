@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Route, Link } from 'react-router-dom';
-import Register from './pages/register/register.page';
+import Register from './pages/login-register/login-register.page';
 import Landing from './pages/landing/landing.page';
 import { Provider } from 'react-redux';
 import store from './redux/redux';
@@ -16,7 +16,7 @@ function App() {
        <div class="nav-wrapper">
           <a href="#" class="brand-logo left"><img src={Logo}></img></a>
           <ul class="right">
-            <li><Link to="/logreg" class="waves-effect waves-light btn btn-base btn-small-radius">Login/ Register</Link></li>
+            <li><Link to="/logreg/login" class="waves-effect waves-light btn btn-base btn-small-radius">Login/ Register</Link></li>
           </ul>
         </div>
       </nav>
@@ -28,7 +28,7 @@ function App() {
       <Route exact path='/register' component={Register} /> */}
       {/* <Bottom /> */}
       <Route exact path='/' component={Landing} />
-      <Route exact path='/logreg' component={Register} />
+      <Route exact path='/logreg/login' component={Register} />
     </div>
     <div className="navbar-fixed navbar-bottom">
       <nav className="black">
