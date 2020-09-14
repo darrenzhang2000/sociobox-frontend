@@ -8,6 +8,25 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
+    font-family: Montserrat;
+}
+
+
+
+
+.navbar-fixed{
+  position: fixed !important;
+  bottom: 0;
+}
+
+nav{
+  background-color: black;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
 }
