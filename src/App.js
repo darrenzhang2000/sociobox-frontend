@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import { Route } from 'react-router-dom';
-import Register from './pages/register/register.page';
-import Landing from './pages/landing/landing.page';
+//import Register from './pages/register/register.page';
+//import Landing from './pages/landing/landing.page';
 import { Provider } from 'react-redux';
 import store from './redux/redux';
-
+import 'materialize-css/dist/css/materialize.min.css';
 
 function App() {
   return (
@@ -13,10 +13,23 @@ function App() {
 
     <div>
       {/* <Header /> */}
-      <Route exact path='/' component={Landing} />
-      <Route exact path='/register' component={Register} />
+      {/* <Route exact path='/' component={Landing} />
+      <Route exact path='/register' component={Register} /> */}
       {/* <Bottom /> */}
     </div>
+    <div className="navbar-fixed">
+      <nav className="black">
+       <div class="nav-wrapper">
+          <ul class="center">
+            <li><a href="sass.html">Site map</a></li>
+            <li><a href="badges.html">Terms</a></li>
+            <li><a href="badges.html">Privacy</a></li>
+            <li><a href="badges.html">Contact Us</a></li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+    
     </Provider>
 
   );
