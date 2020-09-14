@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import Register from './pages/register/register.page';
 import Landing from './pages/landing/landing.page';
 import { Provider } from 'react-redux';
@@ -16,7 +16,7 @@ function App() {
        <div class="nav-wrapper">
           <a href="#" class="brand-logo left"><img src={Logo}></img></a>
           <ul class="right">
-            <li><a class="waves-effect waves-light btn btn-base btn-small-radius">Login/ Register</a></li>
+            <li><Link to="/logreg" class="waves-effect waves-light btn btn-base btn-small-radius">Login/ Register</Link></li>
           </ul>
         </div>
       </nav>

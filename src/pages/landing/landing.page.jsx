@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import { Route, Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import M from "materialize-css";
@@ -117,7 +118,7 @@ const Landing = () => {
             <div className="col s12 center-align">
                 <h3 className="t1">Stay on top of everything with </h3>
                 <h3 className="t2">Sociobox</h3>
-                <a class="waves-effect waves-light btn btn-base btn-small-radius">Login/ Register</a>
+                <Link to="/logreg" class="waves-effect waves-light btn btn-base btn-small-radius">Login/ Register</Link>
             </div>
             
         </div>
