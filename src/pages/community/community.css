@@ -1,0 +1,28 @@
+#discussion {
+
+}
+#discussion p{
+    font-size: 24px;
+}
+
+.disc-item{
+    display: flex;
+    justify-content: space-between;
+}
+.disc-item div{
+    display: flex;
+}
+#title{
+    border-bottom: 1px solid #000000;
+    padding-bottom: 20px;
+}
+
+#discussion label {
+    padding-top: 15px;
+    border: none !important;
+}
+
+.collection-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    margin-bottom: 25px;
+}
