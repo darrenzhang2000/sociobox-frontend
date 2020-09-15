@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 import { composeWithDevTools } from "redux-devtools-extension";
-import Podcast from '../component/podcasts/podcast';
+// import Podcast from '../component/podcasts/podcast';
 
 
 const STORE_EMAIL = 'STORE_EMAIL';

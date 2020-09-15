@@ -5,12 +5,13 @@ import { Route, Link } from 'react-router-dom';
 import Register from './pages/login-register/login-register.page';
 import Landing from './pages/landing/landing.page';
 import Onboarding from './pages/onboarding/onboarding.page';
+import Home from './pages/home/home.page'
 import { Provider } from 'react-redux';
 import store from './redux/redux';
 import Logo from './logo.svg';
 import 'materialize-css/dist/css/materialize.min.css';
-import Podcast from './component/podcasts/podcast';
-import Article from './component/articles/article';
+// import Podcast from './component/podcasts/podcast';
+// import Article from './component/articles/article';
 
 function App() {
   return (
@@ -47,8 +48,8 @@ function App() {
 
     
         {/* <Bottom /> */}
-        <Route exact path="/podcast" component={Podcast} />
-        <Route exact path="/article" component={Article} />
+        {/* <Route exact path="/podcast" component={Podcast} /> */}
+        {/* <Route exact path="/article" component={Article} /> */}
 
     </div>
       <div className="navbar-fixed navbar-bottom">
