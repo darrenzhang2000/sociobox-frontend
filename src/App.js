@@ -1,4 +1,3 @@
-
 import SocialIssue from "./pages/social_issue/social_issue.page.jsx";
 import React from 'react';
 import './App.css';
@@ -7,6 +6,7 @@ import Register from './pages/login-register/login-register.page';
 import Landing from './pages/landing/landing.page';
 import Onboarding from './pages/onboarding/onboarding.page';
 import Home from './pages/home/home.page'
+import Community from "./pages/community/community.page.jsx";
 import { Provider } from 'react-redux';
 import store from './redux/redux';
 import Logo from './logo.svg';
@@ -45,11 +45,11 @@ function App() {
         <Route exact path="/" component={Landing} />
         <Route exact path="/logreg/login" component={Register} />
         <Route exact path="/home" component={Home} />
+        <Route exact path="/community/forum" component={Community} />
         <Route exact path="/social_issue" component={SocialIssue} />
         <Route exact path='/onboarding' component={Onboarding}/>    
         <Route exact path="/podcast" component={Podcast} />
         <Route exact path="/article" component={Article} />
-
     </div>
       <div className="navbar-fixed navbar-bottom navv">
         <nav className="black">
