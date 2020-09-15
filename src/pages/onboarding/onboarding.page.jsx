@@ -52,7 +52,7 @@ function PreferredMedia(){
                 </button> */}
                 <BrowserRouter  forceRefresh={true}>
                     <Link to="/article">
-                        <div className="link-btn"   >
+                        <div className="link-btn waves-effect waves-light btn btn-base"   >
                             Article
                         </div>
                     </Link>
@@ -68,7 +68,7 @@ function PreferredMedia(){
             <div className="col s12 center-align">
                 <BrowserRouter  forceRefresh={true}>
                     <Link to="/podcast">
-                        <div className="link-btn" >
+                        <div className="link-btn waves-effect waves-light btn btn-base" >
                             Podcast
                         </div>
                     </Link>
@@ -93,9 +93,19 @@ export function CustomFeed(){
             <div className="col s12">
                 <h5>Frequency of updates</h5>
                 <div id="updates-freq">
-                    <a className="confirm waves-effect waves-light btn btn-base">Daily</a>
+                    <input id="daily" type="radio" name="radio"/>
+                    <label for="daily" className="link-btn waves-effect waves-light btn btn-base">Daily</label>
+                    
+                    <input id="weekly" type="radio" name="radio"/>
+                    <label for="weekly" className="link-btn waves-effect waves-light btn btn-base">Weekly</label>
+                    
+                    <input id="monthly" type="radio" name="radio"/>
+                    <label for="monthly" className="link-btn waves-effect waves-light btn btn-base">Monthly</label>
+
+                    {/* <div className="link-btn waves-effect waves-light btn btn-base">Monthly</div> */}
+                    {/* <a className="confirm waves-effect waves-light btn btn-base">Daily</a>
                     <a className="confirm waves-effect waves-light btn btn-base">Weekly</a>
-                    <a className="confirm waves-effect waves-light btn btn-base">Monthly</a>
+                    <a className="confirm waves-effect waves-light btn btn-base">Monthly</a> */}
                 </div>
             </div>
             {/* <div className="col s12">
