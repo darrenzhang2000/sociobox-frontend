@@ -17,7 +17,7 @@
     padding-bottom: 20px;
 }
 
-#discussion label {
+ label {
     padding-top: 15px;
     border: none !important;
 }
@@ -44,5 +44,44 @@
     cursor: pointer;
   }
 
+#option {
+    text-align:end;
+    margin-top: 45px;
+}
 
+.disc-item p{
+ color: black !important;
+}
 
+#post-head{
+    display: flex;
+}
+
+.post textarea{
+    max-width: 1000px;
+    height: 102px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.post-data{
+    margin-bottom: 28px;
+}
+
+.input-comment #user-row{
+    padding-top: 23px;
+    padding-bottom: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+#user-reply {
+    display: flex;
+    width: 90%;
+    max-width: 1014px;
+    height: 102px;
+}
