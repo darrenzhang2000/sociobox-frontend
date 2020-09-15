@@ -3,8 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import SignupStudent from '../../component/signup/signup.component';
-import SignupRecruiter from '../../component/signup/signup.component';
+// import SignupStudent from '../../component/signup/signup.component';
+// import SignupRecruiter from '../../component/signup/signup.component';
 const useStyles = makeStyles((theme) => ({ 
     parent: {
         display: 'flex',
@@ -37,8 +37,9 @@ const Register = () => {
       setValue(newValue);
     };
     return (
-        <div className={classes.parent}>
-            <div className={classes.mainform}>
+        <div>
+            <h1>This is RegLog</h1>
+            {/* <div className={classes.mainform}>
                 <div className={classes.option}>
                     <Paper square>
                         <Tabs
@@ -69,7 +70,7 @@ const Register = () => {
                         </div>  
                     )
                 }
-            </div>
+            </div> */}
         </div>
     )
 };
