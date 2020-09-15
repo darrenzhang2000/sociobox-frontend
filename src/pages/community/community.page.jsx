@@ -25,11 +25,40 @@ function Community() {
         <Route path="/community/post">
           <Post />
         </Route>
+        <Route path="/new_post">
+          <NewPost />
+        </Route>
       </Switch>
     </Router>
   );
 }
-
+const NewPost = () => {
+  return (
+    <div className="newPost">
+      <h3>Create New Post</h3>
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="text" className="newInput" placeholder="Title" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea
+              id="textarea2"
+              className="newTextarea"
+              placeholder="Text"
+            ></textarea>
+          </div>
+        </div>
+      </form>
+      <div className="newPostsButton">
+        <a class="waves-effect waves-light btn-large">Cancel</a>
+        <a class="waves-effect waves-light btn-large">Post</a>
+      </div>
+    </div>
+  );
+};
 function Forum() {
   const socialIssueOfTheMonth = useSelector(
     (state) => state.socialIssueOfTheMonth
@@ -107,12 +136,11 @@ function Forum() {
                     environment or our own health?
                   </p>
                 </div>
-                <a
-                  href="#"
-                  className="waves-effect waves-light btn btn-base btn-small-radius"
-                >
-                  +New Post
-                </a>
+                <Link to="/new_post">
+                  <span className="waves-effect waves-light btn btn-base btn-small-radius">
+                    +New Post
+                  </span>
+                </Link>
               </div>
               <div id="discussion" className="col s12">
                 <h6 id="title">General Discussions</h6>
@@ -197,9 +225,11 @@ function Post() {
           pellentesque.
         </p>
         <div className="right-align">
-          <a className="waves-effect waves-light btn btn-base btn-radius">
-            +New Post
-          </a>
+          <Link to="/new_post">
+            <span className="waves-effect waves-light btn btn-base btn-small-radius">
+              +New Post
+            </span>
+          </Link>
         </div>
       </div>
       <div className="col s12 input-comment">

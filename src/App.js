@@ -25,9 +25,9 @@ function App() {
       <div className="navbar-fixed navbar-top">
         <nav className="white">
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo left">
+            <Link to="/" class="brand-logo left">
               <img src={Logo}></img>
-            </a>
+            </Link>
             <ul class="right">
               <li>
                 <Link

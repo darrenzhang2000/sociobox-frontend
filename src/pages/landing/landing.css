@@ -1,13 +1,16 @@
-.carousel{
-    min-height: 600px !important;
+.carousel {
+  min-height: 600px !important;
 }
 
-.t1{
-    font-size: 36px;
-    font-weight: 100;
+.t1 {
+  font-size: 36px;
+  font-weight: 100;
 }
 
-.img1{
-    width: 100%;
-    height: auto;
+.img1 {
+  width: 100%;
+  height: auto;
+}
+.home img {
+  border-radius: 0;
 }
