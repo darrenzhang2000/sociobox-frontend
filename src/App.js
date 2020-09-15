@@ -1,5 +1,5 @@
 import SocialIssue from "./pages/social_issue/social_issue.page.jsx";
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
 import { Route, Link } from 'react-router-dom';
 import Register from './pages/login-register/login-register.page';
@@ -7,16 +7,26 @@ import Landing from './pages/landing/landing.page';
 import Onboarding from './pages/onboarding/onboarding.page';
 import Home from './pages/home/home.page'
 import Community from "./pages/community/community.page.jsx";
-import { Provider } from 'react-redux';
+import { Provider, useDispatch, useSelector } from 'react-redux';
 import store from './redux/redux';
 import Logo from './logo.svg';
 import 'materialize-css/dist/css/materialize.min.css';
 import Podcast from './components/podcasts/podcast';
 import Article from './components/articles/article';
+import { closeChatBot } from './redux/redux'
+
 
 function App() {
+  const dispatch = useDispatch()
+  const chatbotOpen = useSelector(state => state.chatbotOpen)
+
+  const closeChatBox = (e) => {
+    console.log('closechat')
+    dispatch(closeChatBot(""))
+  }
+
   return (
-    <Provider store={store}>
+    <Fragment>
       <div className="navbar-fixed navbar-top">
         <nav className="white">
           <div class="nav-wrapper">
@@ -53,20 +63,20 @@ function App() {
       </div>
 
 
-
-      {/* Chat bot */}
-      <div className="chat">
-        <div>
-          <button>X</button>
+      { chatbotOpen ? <div className="chat-wrapper">
+        {/* Chat bot */}
+        <div className="chat">
+          <div>
+            <button onClick={closeChatBox}>X</button>
+          </div>
+          <iframe
+            allow="microphone;"
+            width="350"
+            height="430"
+            src="https://console.dialogflow.com/api-client/demo/embedded/936f0a27-ec68-453f-941f-61b8d32b154e">
+          </iframe>
         </div>
-        <iframe
-          allow="microphone;"
-          width="350"
-          height="430"
-          src="https://console.dialogflow.com/api-client/demo/embedded/936f0a27-ec68-453f-941f-61b8d32b154e">
-        </iframe>
-      </div>
-
+      </div> : null}
 
       <div className="navbar-fixed navbar-bottom navv">
         <nav className="black">
@@ -89,7 +99,7 @@ function App() {
           </div>
         </nav>
       </div>
-    </Provider>
+    </Fragment>
   );
 }
 

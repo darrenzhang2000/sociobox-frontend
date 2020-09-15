@@ -42,6 +42,11 @@
 }
 
 .chat{
-  vertical-align: bottom;
-  /* position: fixed; */
+  position: fixed;
+  bottom: 63px;
+}
+
+.chat-wrapper{
+  padding-bottom: 63px;
+  margin-bottom: 63px;
 }
