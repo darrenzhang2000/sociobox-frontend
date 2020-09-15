@@ -87,7 +87,7 @@ function CustomFeed(){
                     
                 </div>
             </div>
-            <Link to="/" className="confirm waves-effect waves-light btn btn-base btn-radius">Confirm</Link>
+            <a href="/home" className="confirm waves-effect waves-light btn btn-base btn-radius">Confirm</a>
         </div>);
 }
 
