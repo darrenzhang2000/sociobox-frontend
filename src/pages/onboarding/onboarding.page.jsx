@@ -52,7 +52,7 @@ function PreferredMedia(){
                 </button> */}
                 <BrowserRouter  forceRefresh={true}>
                     <Link to="/article">
-                        <div className="link-btn" >
+                        <div className="link-btn"   >
                             Article
                         </div>
                     </Link>
@@ -79,7 +79,12 @@ function PreferredMedia(){
     );
 }
 
-function CustomFeed(){
+export function CustomFeed(){
+    // const [daily, setDaily] = useState(false)
+    // const [weekly, setWeekly] = useState(false)
+    // const [monthly, setMonthly] = useState(false)
+
+
     return(
         <div className="row to-select">
             <div className="col s12">
@@ -93,7 +98,7 @@ function CustomFeed(){
                     <a className="confirm waves-effect waves-light btn btn-base">Monthly</a>
                 </div>
             </div>
-            <div className="col s12">
+            {/* <div className="col s12">
                 <h5>Arrange in order of preference</h5>
                 <div id="region">
                 <a className="confirm waves-effect waves-light btn btn-base btn-radius">Daily</a>
@@ -101,7 +106,7 @@ function CustomFeed(){
                     <a className="confirm waves-effect waves-light btn btn-base btn-radius">Monthly</a>
                     
                 </div>
-            </div>
+            </div> */}
             <a href="/home" className="confirm waves-effect waves-light btn btn-base btn-radius">Confirm</a>
         </div>);
 }

@@ -13,6 +13,7 @@ import Register from './pages/login-register/login-register.page';
 import NewPost from './pages/new_post/new_post.page';
 import Onboarding from './pages/onboarding/onboarding.page';
 import SocialIssue from "./pages/social_issue/social_issue.page.jsx";
+import {CustomFeed } from './pages/onboarding/onboarding.page'
 
 function App() {
   const dispatch = useDispatch()
@@ -54,6 +55,7 @@ function App() {
         <Route exact path="/podcast" component={Podcast} />
         <Route exact path="/article" component={Article} />
         <Route exact path="/new_post" component={NewPost} />
+        <Route exact path="/customFeed" component={CustomFeed} />
       </div>
 
 
