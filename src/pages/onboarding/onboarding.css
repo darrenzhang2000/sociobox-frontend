@@ -83,3 +83,20 @@
         color: black;
         font-size: 24px;
     }
+
+    .link-btn{
+        margin: 0 auto;
+        padding-top: 40px;
+        background-color: white !important;
+        color: black;
+        font-size: 24px;
+        min-width: 200px;
+        width: 50%;
+        max-width: 479px;
+        height: 144px;;
+        background-color: white;
+        border: none;
+        border-radius: 24px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: 10px;
+    }
