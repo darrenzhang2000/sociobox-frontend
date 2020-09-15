@@ -14,8 +14,11 @@ function Community() {
         <Router>
 
             <Switch>
-                <Route path={`${match.url}/forum`}>
+                <Route path="/community/forum">
                     <Forum/>
+                </Route>
+                <Route path="/community/post">
+                    <Post/>
                 </Route>
             </Switch>
         </Router>
@@ -23,11 +26,19 @@ function Community() {
 }
 
 function Forum(){
-
+    return(
+        <div>
+            <h1>Hey Forum here</h1>
+        </div>
+    )
 }
 
 function Post(){
-
+    return(
+        <div>
+            <h1>Hey Post here</h1>
+        </div>
+    )
 }
 
 export default Community;

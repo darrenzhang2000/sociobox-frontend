@@ -42,7 +42,7 @@ function App() {
         <Route exact path="/" component={Landing} />
         <Route exact path="/logreg/login" component={Register} />
         <Route exact path="/home" component={Home} />
-        <Route exact path="/community" component={Community} />
+        <Route exact path="/community/forum" component={Community} />
         <Route exact path='/onboarding' component={Onboarding}/>
       </div>
       <div className="navbar-fixed navbar-bottom">
