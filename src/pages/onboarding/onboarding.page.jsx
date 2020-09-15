@@ -5,7 +5,7 @@ import {
     Route,
     Link,
     useRouteMatch,
-    useParams
+    useParams, BrowserRouter
   } from "react-router-dom";
 import 'materialize-css/dist/css/materialize.min.css';
 import { render } from '@testing-library/react';
@@ -43,9 +43,16 @@ function PreferredMedia(){
                     </label><span>Articles</span>
                 </div> */}
 
-                <button className="ck">
+                {/* <button className="ck">
                     Articles
-                </button>
+                </button> */}
+                <BrowserRouter  forceRefresh={true}>
+                    <Link to="/article">
+                        <div className="link-btn" >
+                            Article
+                        </div>
+                    </Link>
+                </BrowserRouter>
                 {/* <input id="test" type="checkbox"/>
                 <label for="test" className="ck">test</label> */}
             </div>
@@ -55,9 +62,13 @@ function PreferredMedia(){
                 </button>
             </div>
             <div className="col s12 center-align">
-                <button className="ck">
-                    Broadcast
-                </button>
+                <BrowserRouter  forceRefresh={true}>
+                    <Link to="/podcast">
+                        <div className="link-btn" >
+                            Podcast
+                        </div>
+                    </Link>
+                </BrowserRouter>
             </div>
             <Link to="/customFeed" className="confirm waves-effect waves-light btn btn-base btn-radius">Confirm</Link>
         </div>
