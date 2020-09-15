@@ -1,0 +1,100 @@
+/* start general */
+/* end general */
+
+/* start search */
+.home .searchForm input.searchInput {
+  border: 3px solid #2160aa !important;
+  border-radius: 10px;
+  padding: 7px;
+  height: 20px;
+  font-family: "Montserrat", sans-serif !important;
+}
+.home .searchForm .searchIcon {
+  color: #2160aa;
+  font-size: 30px;
+  position: relative;
+  top: 17px;
+  left: 5px;
+  cursor: pointer;
+}
+.searchForm {
+  margin-right: 20px;
+}
+/* end search */
+/* start banner */
+.homeBanner h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  color: #000000;
+  margin-left: 20px;
+}
+img.homeBanner {
+  text-align: center;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.bannerImg .bannerContainer {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bannerImg h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  color: #000000;
+}
+.bannerImg a {
+  width: 170px;
+  height: 55px;
+  color: #fff;
+  background-color: #2160aa !important;
+  border-radius: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 10px;
+  line-height: 50px;
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+/* end banner */
+/* start Involved */
+.Involved {
+  padding-bottom: 100px;
+  text-align: center;
+}
+.Involved a {
+  text-align: center;
+  width: 400px;
+  height: 55px;
+  color: #fff;
+  background-color: #2160aa !important;
+  border-radius: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 20px;
+  line-height: 50px;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  margin: 0 10px;
+}
+.Involved h3 {
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+}
+/* end Involved */
