@@ -1,13 +1,17 @@
 import { createStore } from 'redux';
 import { composeWithDevTools } from "redux-devtools-extension";
+// import Podcast from '../component/podcasts/podcast';
 
 
 const STORE_EMAIL = 'STORE_EMAIL';
 const STORE_USER_PROFILE = 'STORE_USER_PROFILE'
+const STORE_ARTICLES = 'STORE_ARTICLES'
+const UPDATE_SOCIAL_ISSUE = 'UPDATE_SOCIAL_ISSUE'
 
 const initialState = {
     email: "d",
-
+    articles: [],
+    socialIssueOfTheMonth: "Plastic Pollution"
 }
 
 export function storeEmail(email){
@@ -29,6 +33,24 @@ export function storeUserProfile(profile){
     }
 }
 
+export function storeArticles(articles){
+    console.log('store art red', articles)
+    return {
+        type: STORE_ARTICLES,
+        payload: {
+            articles: articles
+        }
+    }
+}
+
+export function updateSocialIssue(socialIssue){
+    return {
+        type: UPDATE_SOCIAL_ISSUE,
+        payload: {
+            socialIssue: socialIssue
+        }
+    }
+}
 
 function userReducer(state=initialState, action){
     console.log('reducer hit')
@@ -52,7 +74,20 @@ function userReducer(state=initialState, action){
                 degree: degree,
                 major: major
             }
+
+        case STORE_ARTICLES:
+            console.log(payload.articles, 'case')
+            return {
+                ...state,
+                articles: payload.articles
+            }
         
+        case UPDATE_SOCIAL_ISSUE:
+            return {
+                ...state,
+                socialIssueOfTheMonth: payload.socialIssue
+            }
+
         default:
             return state
     }
