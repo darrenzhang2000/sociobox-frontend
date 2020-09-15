@@ -9,8 +9,8 @@ import {
   useRouteMatch,
   useParams,
 } from "react-router-dom";
-import UserRegister from '../../component/User/Register/register';
-import UserLogin from '../../component/User/Login/login';
+// import UserRegister from '../../component/User/Register/register';
+// import UserLogin from '../../component/User/Login/login';
 // import UserRegister from "../../component/User/Register/register";
 // import SignupStudent from '../../component/signup/signup.component';
 // import SignupRecruiter from '../../component/signup/signup.component';
@@ -65,12 +65,8 @@ const Register = () => {
         </div>
       </div>
       <Switch>
-        <Route path={`/logreg/register`}>
-          <UserRegister />
-        </Route>
-        <Route path={`/logreg/login`}>
-          <UserLogin />
-        </Route>
+        <Route path={`/logreg/register`}>{/* <UserRegister /> */}</Route>
+        <Route path={`/logreg/login`}>{/* <UserLogin /> */}</Route>
       </Switch>
     </Router>
   );
