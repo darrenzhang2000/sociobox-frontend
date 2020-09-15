@@ -1,0 +1,46 @@
+#pod-div{
+    max-width: 1400px;
+}
+
+#audio-div{
+    margin-top: 50px;
+}
+
+#info{
+    text-transform: capitalize;
+}
+
+#info {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 30px;
+}
+
+#up-coming li{
+    display: flex;
+    justify-content: center;
+
+}
+
+#up-coming h5{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 71px;
+}
+
+#up-coming h6{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+#up-coming img{
+    width: 100px !important;
+}

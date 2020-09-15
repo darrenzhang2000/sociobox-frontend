@@ -1,23 +1,24 @@
-import SocialIssue from "./pages/social_issue/social_issue.page.jsx";
-import React, { Fragment } from 'react';
-import './App.css';
-import { Route, Link } from 'react-router-dom';
-import Register from './pages/login-register/login-register.page';
-import Landing from './pages/landing/landing.page';
-import Onboarding from './pages/onboarding/onboarding.page';
-import Home from './pages/home/home.page'
-import Community from "./pages/community/community.page.jsx";
-import { Provider, useDispatch, useSelector } from 'react-redux';
-import store from './redux/redux';
-import Logo from './logo.svg';
 import 'materialize-css/dist/css/materialize.min.css';
-import Podcast from './components/podcasts/podcast';
+import React, { Fragment } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link, Route } from 'react-router-dom';
+import './App.css';
 import Article from './components/articles/article';
-import { closeChatBot } from './redux/redux'
-
+import Podcast from './components/podcasts/podcast';
+import Logo from './logo.svg';
+import Community from "./pages/community/community.page.jsx";
+import Home from './pages/home/home.page';
+import Landing from './pages/landing/landing.page';
+import Register from './pages/login-register/login-register.page';
+import NewPost from './pages/new_post/new_post.page';
+import Onboarding from './pages/onboarding/onboarding.page';
+import SocialIssue from "./pages/social_issue/social_issue.page.jsx";
+import { closeChatBot } from './redux/redux';
 
 function App() {
   const dispatch = useDispatch()
+  const [display, setDisplay] = React.useState("block");
+
   const chatbotOpen = useSelector(state => state.chatbotOpen)
 
   const closeChatBox = (e) => {
@@ -57,11 +58,11 @@ function App() {
         <Route exact path="/home" component={Home} />
         <Route exact path="/community/forum" component={Community} />
         <Route exact path="/social_issue" component={SocialIssue} />
-        <Route exact path='/onboarding' component={Onboarding} />
+        <Route exact path="/onboarding" component={Onboarding} />
         <Route exact path="/podcast" component={Podcast} />
         <Route exact path="/article" component={Article} />
+        <Route exact path="/new_post" component={NewPost} />
       </div>
-
 
       { chatbotOpen ? <div className="chat-wrapper">
         {/* Chat bot */}
@@ -77,6 +78,7 @@ function App() {
           </iframe>
         </div>
       </div> : null}
+
 
       <div className="navbar-fixed navbar-bottom navv">
         <nav className="black">
@@ -94,7 +96,6 @@ function App() {
               <li>
                 <a href="badges.html">Contact Us</a>
               </li>
-
             </ul>
           </div>
         </nav>
@@ -103,4 +104,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
