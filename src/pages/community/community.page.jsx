@@ -87,7 +87,7 @@ function Forum() {
                     <li className="collection-item avatar">
                         <Link to="/community/post"> <div className="disc-item">
                             <div>
-                                <img src={UserSvg} alt="" class="circle" />
+                                <img src={UserSvg} alt="" className="circle" />
                                 <p>Should we be more concerned about plastic’s impact on the environment or our own health?</p>
                             </div>
                             <label>30 min ago</label>

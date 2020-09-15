@@ -42,11 +42,11 @@ const Home = () => {
         {/* start Involved */}
         <div className="Involved">
           <h3>Get Involved :</h3>
-          <a class="waves-effect waves-light btn-large">
+          <a href="/community/forum" class="waves-effect waves-light btn-large">
             <i class="material-icons left">chat_bubble_outline</i>Join the
             Conversation
           </a>
-          <a class="waves-effect waves-light btn-large">
+          <a href="https://devpost.com/" class="waves-effect waves-light btn-large">
             <i class="material-icons left">event_note</i>Virtual Events
           </a>
         </div>

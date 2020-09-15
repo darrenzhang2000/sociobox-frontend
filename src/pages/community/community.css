@@ -85,3 +85,7 @@
     max-width: 1014px;
     height: 102px;
 }
+
+.collection-item img{
+    max-width: 50px;
+}
