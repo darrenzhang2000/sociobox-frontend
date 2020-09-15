@@ -26,3 +26,23 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.35);
     margin-bottom: 25px;
 }
+
+.forum input.searchInput{
+    border: 3px solid #2160aa !important;
+    border-radius: 10px;
+    padding: 7px;
+    height: 20px;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.forum .searchIcon {
+    color: #2160aa;
+    font-size: 30px;
+    position: relative;
+    top: 17px;
+    left: 5px;
+    cursor: pointer;
+  }
+
+
+

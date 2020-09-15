@@ -31,7 +31,7 @@ function Community() {
 
 function Forum(){
     return(
-        <div className="row">
+        <div className="row forum">
             <div className="col s8">
                 <h1>Plastic Pollution Community Forum</h1>
                 <h5>Wecome to our online community! This is a safe space to share ideas and 
@@ -47,6 +47,10 @@ function Forum(){
                         placeholder="Search"
                         />
                 </div>
+                <div className="col s1">
+                    <i className="material-icons searchIcon">search</i>
+                  </div>
+                <a href="">+New Post</a>
             </div>
             <div id="discussion" className="col s12">
                 <h6 id="title">General Discussions</h6>
