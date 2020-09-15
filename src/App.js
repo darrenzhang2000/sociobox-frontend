@@ -4,6 +4,7 @@ import { Route, Link } from "react-router-dom";
 import Register from "./pages/login-register/login-register.page";
 import Landing from "./pages/landing/landing.page";
 import Home from "./pages/home/home.page.jsx";
+import Onboarding from "./pages/onboarding/onboarding.page.jsx";
 import { Provider } from "react-redux";
 import store from "./redux/redux";
 import Logo from "./logo.svg";
@@ -40,6 +41,7 @@ function App() {
         <Route exact path="/" component={Landing} />
         <Route exact path="/logreg/login" component={Register} />
         <Route exact path="/home" component={Home} />
+        <Route exact path='/onboarding' component={Onboarding}/>
       </div>
       <div className="navbar-fixed navbar-bottom">
         <nav className="black">
