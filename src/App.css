@@ -41,7 +41,8 @@
   width: 100%;
 }
 
-.chat{
+.chat {
   vertical-align: bottom;
-  /* position: fixed; */
+  position: fixed;
+  bottom: 0;
 }

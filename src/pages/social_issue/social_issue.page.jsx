@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./social_issue.css";
-import banner from "./images/Group 19.png";
+
 const SocialIssue = () => {
   return (
     <div className="socialIssues">
