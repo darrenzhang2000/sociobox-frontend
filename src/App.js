@@ -1,4 +1,5 @@
 
+import SocialIssue from "./pages/social_issue/social_issue.page.jsx";
 import React from 'react';
 import './App.css';
 import { Route, Link } from 'react-router-dom';
@@ -44,6 +45,7 @@ function App() {
         <Route exact path="/" component={Landing} />
         <Route exact path="/logreg/login" component={Register} />
         <Route exact path="/home" component={Home} />
+        <Route exact path="/social_issue" component={SocialIssue} />
         <Route exact path='/onboarding' component={Onboarding}/>    
         <Route exact path="/podcast" component={Podcast} />
         <Route exact path="/article" component={Article} />

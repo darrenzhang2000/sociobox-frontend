@@ -1,0 +1,92 @@
+.socialIssuesHeader {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  color: #000000;
+}
+.socialIssuesSubheader {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  text-align: center;
+  color: #000000;
+}
+.issueColumn {
+  background: #2160aa;
+  margin: 2% !important;
+  width: 29% !important;
+  padding: 20px !important;
+}
+.issueColumn h5 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+.boxCheckTop {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #2160aa;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  top: -40px;
+  left: -35px;
+}
+.boxCheckTop i {
+  color: #2160aa;
+  font-size: 120px;
+  position: relative;
+  top: -30px;
+}
+.issueBox {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.issueBox label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+}
+.issueBox [type="checkbox"].filled-in:checked + span:not(.lever):after {
+  background: rgba(33, 96, 170, 0.5) !important;
+}
+.socialIssuesButton {
+  padding-bottom: 100px;
+}
+.socialIssuesButton a {
+  text-align: center;
+  width: 400px;
+  height: 55px;
+  color: #fff;
+  background-color: #2160aa !important;
+  border-radius: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 20px;
+  line-height: 50px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+@media screen and (max-width: 992px) {
+  .issueColumn {
+    width: 90% !important;
+    margin-top: 50px !important;
+    margin: 5% !important;
+  }
+}
