@@ -34,9 +34,10 @@ const Article = props => {
             <p>{articles[0].publishedAt.slice(0, 10)}</p>
 
             <a href={articles[0].url}>  Source: {articles[0].url}</a>
-            <img className="img1" src={articles[0].urlToImage}></img> </div> : null
+            
+            <div className="article-img"><img className="img1" src={articles[0].urlToImage}></img></div> </div> : null
         }
-
+        <div className="info-article">
         <p>
             We know that plastic waste is a big problem for the planet - our oceans are becoming clogged with the stuff and we're rapidly running out of landfill sites.
             Only 9% is recycled. Burning it contributes to greenhouse gas emissions and global warming. So could plant-based alternatives and better recycling provide an answer? We have grown to rely on plastic - it's hardwearing and versatile and much of our modern economy depends on it. And for many current uses there are simply no commercially viable biodegradable alternatives.
@@ -53,6 +54,7 @@ const Article = props => {
         <p>
             One company trying to change this is Biome Bioplastics, which has developed a fully compostable and recyclable cup using natural materials such as potato starch, corn starch, and cellulose, the main constituent of plant cell walls. Most traditional plastics are made from oil.
         </p>
+        </div>
 
         <h3 className="upcoming">Upcoming Articles</h3>
 
