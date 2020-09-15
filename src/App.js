@@ -1,20 +1,22 @@
 import SocialIssue from "./pages/social_issue/social_issue.page.jsx";
-import React from 'react';
-import './App.css';
-import { Route, Link } from 'react-router-dom';
-import Register from './pages/login-register/login-register.page';
-import Landing from './pages/landing/landing.page';
-import Onboarding from './pages/onboarding/onboarding.page';
-import Home from './pages/home/home.page'
+import React from "react";
+import "./App.css";
+import { Route, Link } from "react-router-dom";
+import Register from "./pages/login-register/login-register.page";
+import Landing from "./pages/landing/landing.page";
+import Onboarding from "./pages/onboarding/onboarding.page";
+import Home from "./pages/home/home.page";
+import NewPost from "./pages/new_post/new_post.page";
 import Community from "./pages/community/community.page.jsx";
-import { Provider } from 'react-redux';
-import store from './redux/redux';
-import Logo from './logo.svg';
-import 'materialize-css/dist/css/materialize.min.css';
-import Podcast from './components/podcasts/podcast';
-import Article from './components/articles/article';
+import { Provider } from "react-redux";
+import store from "./redux/redux";
+import Logo from "./logo.svg";
+import "materialize-css/dist/css/materialize.min.css";
+import Podcast from "./components/podcasts/podcast";
+import Article from "./components/articles/article";
 
 function App() {
+  const [display, setDisplay] = React.useState("block");
   return (
     <Provider store={store}>
       <div className="navbar-fixed navbar-top">
@@ -47,26 +49,27 @@ function App() {
         <Route exact path="/home" component={Home} />
         <Route exact path="/community/forum" component={Community} />
         <Route exact path="/social_issue" component={SocialIssue} />
-        <Route exact path='/onboarding' component={Onboarding} />
+        <Route exact path="/onboarding" component={Onboarding} />
         <Route exact path="/podcast" component={Podcast} />
         <Route exact path="/article" component={Article} />
+        <Route exact path="/new_post" component={NewPost} />
       </div>
 
-
-
       {/* Chat bot */}
-      <div className="chat">
+      <div
+        className="chat"
+        style={display ? { display: "block" } : { display: "none" }}
+      >
         <div>
-          <button>X</button>
+          <button onClick={() => setDisplay(false)}>X</button>
         </div>
         <iframe
           allow="microphone;"
           width="350"
           height="430"
-          src="https://console.dialogflow.com/api-client/demo/embedded/936f0a27-ec68-453f-941f-61b8d32b154e">
-        </iframe>
+          src="https://console.dialogflow.com/api-client/demo/embedded/936f0a27-ec68-453f-941f-61b8d32b154e"
+        ></iframe>
       </div>
-
 
       <div className="navbar-fixed navbar-bottom navv">
         <nav className="black">
@@ -84,7 +87,6 @@ function App() {
               <li>
                 <a href="badges.html">Contact Us</a>
               </li>
-
             </ul>
           </div>
         </nav>
