@@ -10,8 +10,8 @@ import { Provider } from 'react-redux';
 import store from './redux/redux';
 import Logo from './logo.svg';
 import 'materialize-css/dist/css/materialize.min.css';
-// import Podcast from './component/podcasts/podcast';
-// import Article from './component/articles/article';
+import Podcast from './component/podcasts/podcast';
+import Article from './component/articles/article';
 
 function App() {
   return (
@@ -44,15 +44,12 @@ function App() {
         <Route exact path="/" component={Landing} />
         <Route exact path="/logreg/login" component={Register} />
         <Route exact path="/home" component={Home} />
-        <Route exact path='/onboarding' component={Onboarding}/>
-
-    
-        {/* <Bottom /> */}
-        {/* <Route exact path="/podcast" component={Podcast} /> */}
-        {/* <Route exact path="/article" component={Article} /> */}
+        <Route exact path='/onboarding' component={Onboarding}/>    
+        <Route exact path="/podcast" component={Podcast} />
+        <Route exact path="/article" component={Article} />
 
     </div>
-      <div className="navbar-fixed navbar-bottom">
+      <div className="navbar-fixed navbar-bottom navv">
         <nav className="black">
           <div class="nav-wrapper">
             <ul class="center">

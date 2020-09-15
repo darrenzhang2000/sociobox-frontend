@@ -93,7 +93,7 @@ const Landing = () => {
                     <Signin/>
                 </div> 
             </div> */}
-            <img src="https://user-images.githubusercontent.com/44158788/93164850-915f2a00-f6e8-11ea-8a04-aa0f14a67727.png"></img>
+            <img className="img1" src="https://user-images.githubusercontent.com/44158788/93164850-915f2a00-f6e8-11ea-8a04-aa0f14a67727.png"></img>
             <div className="col s12 center-align">
                 <h3 className="t1">Stay on top of everything with </h3>
                 <h3 className="t2">Sociobox</h3>
