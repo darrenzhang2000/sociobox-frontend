@@ -51,7 +51,7 @@ function UserLogin() {
 
                 <div className="row div-btn">
                     <div className="input-field col s12 center-align">
-                        <button className="btn btn-base btn-radius ">Submit</button>
+                        <a href='/onboarding' className="btn btn-base btn-radius ">Submit</a>
                     </div>
                 </div>
             </form>

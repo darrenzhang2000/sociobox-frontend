@@ -63,8 +63,8 @@ const Register = () => {
         </div>
       </div>
       <Switch>
-        <Route path={`/logreg/register`}>{/* <UserRegister /> */}</Route>
-        <Route path={`/logreg/login`}>{/* <UserLogin /> */}</Route>
+        <Route path={`/logreg/register`}><UserRegister /></Route>
+        <Route path={`/logreg/login`}><UserLogin /></Route>
       </Switch>
     </Router>
   );
