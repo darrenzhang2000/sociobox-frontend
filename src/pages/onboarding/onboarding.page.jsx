@@ -80,7 +80,14 @@ function CustomFeed(){
             </div>
             <div className="col s12">
                 <h5>Arrange in order of preference</h5>
+                <div id="region">
+                <a className="confirm waves-effect waves-light btn btn-base btn-radius">Daily</a>
+                    <a className="confirm waves-effect waves-light btn btn-base btn-radius">Weekly</a>
+                    <a className="confirm waves-effect waves-light btn btn-base btn-radius">Monthly</a>
+                    
+                </div>
             </div>
+            <Link to="/" className="confirm waves-effect waves-light btn btn-base btn-radius">Confirm</Link>
         </div>);
 }
 

@@ -70,3 +70,16 @@
         margin: 0 auto;
         max-width: 640px;
     }
+
+    #region {
+        display: flex;
+        max-width: 279px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    #region  .btn{
+        background-color: white !important;
+        color: black;
+        font-size: 24px;
+    }
