@@ -13,18 +13,10 @@ import Register from './pages/login-register/login-register.page';
 import NewPost from './pages/new_post/new_post.page';
 import Onboarding from './pages/onboarding/onboarding.page';
 import SocialIssue from "./pages/social_issue/social_issue.page.jsx";
-import { closeChatBot } from './redux/redux';
 
 function App() {
   const dispatch = useDispatch()
   const [display, setDisplay] = React.useState("block");
-
-  const chatbotOpen = useSelector(state => state.chatbotOpen)
-
-  const closeChatBox = (e) => {
-    console.log('closechat')
-    dispatch(closeChatBot(""))
-  }
 
   return (
     <Fragment>
@@ -64,20 +56,6 @@ function App() {
         <Route exact path="/new_post" component={NewPost} />
       </div>
 
-      { chatbotOpen ? <div className="chat-wrapper">
-        {/* Chat bot */}
-        <div className="chat">
-          <div>
-            <button onClick={closeChatBox}>X</button>
-          </div>
-          <iframe
-            allow="microphone;"
-            width="350"
-            height="430"
-            src="https://console.dialogflow.com/api-client/demo/embedded/936f0a27-ec68-453f-941f-61b8d32b154e">
-          </iframe>
-        </div>
-      </div> : null}
 
 
       <div className="navbar-fixed navbar-bottom navv">

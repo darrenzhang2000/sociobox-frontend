@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { Route, Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
@@ -8,6 +8,11 @@ import './landing.css';
 // import Bottom from '../../component/bottom/bottom.component';
 import Image from './images/background.jpg';
 // import Signin from '../../component/signin/signin.component';
+import { closeChatBot } from '../../redux/redux';
+import { useDispatch, useSelector } from 'react-redux';
+
+
+
 var styles = {
     backgroundImage: `url(${Image})`,
     backgroundPositionX: 'center',
@@ -50,18 +55,25 @@ const useStyles = makeStyles((theme) => ({
         padding: '10px'
     }
 }));
-  
+
 const Landing = () => {
-    
+    const dispatch = useDispatch()
+
     const classes = useStyles();
+    const chatbotOpen = useSelector(state => state.chatbotOpen)
+
+    const closeChatBox = (e) => {
+        console.log('closechat')
+        dispatch(closeChatBot(""))
+    }
 
     //componentDidMount() {
-        
-    
-        //Instance Plugin
-        // let instance = M.Carousel.getInstance(this.Carousel);
-        // instance.next(2);
-      //};
+
+
+    //Instance Plugin
+    // let instance = M.Carousel.getInstance(this.Carousel);
+    // instance.next(2);
+    //};
 
     useEffect(() => {
         var carousel = document.querySelectorAll(".sidenav");
@@ -69,15 +81,15 @@ const Landing = () => {
             fullWidth: true,
             indicators: true,
             onCycleTo: () => {
-            console.log("New Slide");
-          }
+                console.log("New Slide");
+            }
         };
-        M.Carousel.init(carousel, {options});
+        M.Carousel.init(carousel, { options });
     }, [])
-      
+
     return (
         <div className="row">
-            
+
             {/* <div className={classes.mainback}>
                 <div className={classes.mainimage} style={styles}>
                     <div className={classes.infor}>
@@ -99,7 +111,22 @@ const Landing = () => {
                 <h3 className="t2">Sociobox</h3>
                 <Link to="/logreg/login" class="waves-effect waves-light btn btn-base btn-small-radius">Login/ Register</Link>
             </div>
-            
+
+            { chatbotOpen ? <div className="chat-wrapper">
+                {/* Chat bot */}
+                <div className="chat">
+                    <div>
+                        <button onClick={closeChatBox}>X</button>
+                    </div>
+                    <iframe
+                        allow="microphone;"
+                        width="350"
+                        height="430"
+                        src="https://console.dialogflow.com/api-client/demo/embedded/936f0a27-ec68-453f-941f-61b8d32b154e">
+                    </iframe>
+                </div>
+            </div> : null}
+
         </div>
     )
 };
