@@ -46,6 +46,7 @@ nav img{
 .btn-base{
   background-color: #2160AA !important;
   min-width: 150px;
+  text-transform: capitalize !important;
  }
 
  .btn-small-radius{

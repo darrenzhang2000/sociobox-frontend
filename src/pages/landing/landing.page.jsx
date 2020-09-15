@@ -118,7 +118,7 @@ const Landing = () => {
             <div className="col s12 center-align">
                 <h3 className="t1">Stay on top of everything with </h3>
                 <h3 className="t2">Sociobox</h3>
-                <Link to="/logreg" class="waves-effect waves-light btn btn-base btn-small-radius">Login/ Register</Link>
+                <Link to="/logreg/login" class="waves-effect waves-light btn btn-base btn-small-radius">Login/ Register</Link>
             </div>
             
         </div>
