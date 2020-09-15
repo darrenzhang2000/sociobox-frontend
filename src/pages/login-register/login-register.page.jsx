@@ -9,8 +9,8 @@ import {
   useRouteMatch,
   useParams,
 } from "react-router-dom";
-import UserRegister from '../../component/User/Register/register';
-import UserLogin from '../../component/User/Login/login';
+import UserRegister from '../../components/User/Register/register';
+import UserLogin from '../../components/User/Login/login';
 // import UserRegister from "../../component/User/Register/register";
 // import SignupStudent from '../../component/signup/signup.component';
 // import SignupRecruiter from '../../component/signup/signup.component';
