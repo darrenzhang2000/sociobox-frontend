@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -27,6 +27,10 @@ function Onboarding(){
 }
 
 function PreferredMedia(){
+    const [highlightArticle, setHighlightArticle] = useState(false)
+    const [highlightVideo, setHighlightVideo] = useState(false)
+    const [highlightPodcast, setHighlightPodcast] = useState(false)
+
     return(
         <div id="" className="row to-select">
             
@@ -43,20 +47,20 @@ function PreferredMedia(){
                     </label><span>Articles</span>
                 </div> */}
 
-                <button className="ck">
+                <button className="ck" onClick={()=>setHighlightArticle(!highlightArticle)}>
                     Articles
                 </button>
                 {/* <input id="test" type="checkbox"/>
                 <label for="test" className="ck">test</label> */}
             </div>
             <div className="col s12 center-align">
-                <button className="ck">
-                    Video
+                <button className="ck" onClick={()=>setHighlightVideo(!highlightVideo)}>
+                    Video (In development)
                 </button>
             </div>
             <div className="col s12 center-align">
-                <button className="ck">
-                    Broadcast
+                <button className="ck" onClick={()=>setHighlightPodcast(!highlightPodcast)}>
+                    Podcast
                 </button>
             </div>
             <Link to="/customFeed" className="confirm waves-effect waves-light btn btn-base btn-radius">Confirm</Link>
