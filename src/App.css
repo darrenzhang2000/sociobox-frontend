@@ -40,3 +40,8 @@
 .nav {
   width: 100%;
 }
+
+.chat{
+  vertical-align: bottom;
+  /* position: fixed; */
+}
